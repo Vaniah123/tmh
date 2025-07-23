@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Animation Story</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="world">
+    <div class="grid-overlay"></div>
+
+    <!-- Slide 1 -->
+    <div class="slide" id="slide1">
+      <div class="character" id="walls-01">
+        <img src="Images/slide 1/walls-01.png" alt="walls" />
+      </div>
+      <div class="character" id="bed-01">
+        <img src="Images/slide 1/bed-01.png" alt="bed" />
+      </div>
+      <div class="character" id="text-01-1">
+        <img src="Images/slide 1/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2" style="display: none;">
+      <div class="character" id="wall-01">
+        <img src="Images/slide 2/wall-01.png" alt="wall" />
+      </div>
+      <div class="character" id="bed-with-figure-01">
+        <img src="Images/slide 2/bed with figure-01.png" alt="bed with figure" />
+      </div>
+      
+      <div class="character" id="text-01-2">
+        <img src="Images/slide 2/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3" style="display: none;">
+      <div class="character" id="background-3">
+        <img src="Images/slide 3/background-01.png" alt="background" />
+      </div>
+      <div class="character" id="kitchen-01">
+        <img src="Images/slide 3/kitchen-01.png" alt="kitchen" />
+      </div>
+      <div class="character" id="text-3">
+        <img src="Images/slide 3/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" id="slide4" style="display: none;">
+      
+      <div class="character" id="walking-01">
+        <img src="Images/slide 4/walking-01.png" alt="walking" />
+      </div>
+      <div class="character" id="text-01-4">
+        <img src="Images/slide 4/text-01.png" alt="text" />
+      </div>
+      <div class="character" id="clouds-01">
+        <img src="Images/slide 4/clouds-01.png" alt="clouds" />
+      </div>
+
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" id="slide5" style="display: none;">
+      <div class="character" id="background-01-5">
+        <img src="Images/slide 5/background-01.png" alt="background" />
+      </div>
+      <div class="character" id="figers-01">
+        <img src="Images/slide 5/figers-01.png" alt="figures" />
+      </div>
+      <div class="character" id="text-01-5">
+        <img src="Images/slide 5/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide" id="slide6" style="display: none;">
+      <div class="character" id="background-01-6">
+        <img src="Images/slide 6/background-01.png" alt="background" />
+      </div>
+      <div class="character" id="figures-01">
+        <img src="Images/slide 6/figures-01.png" alt="figures" />
+      </div>
+      <div class="character" id="text-01-6">
+        <img src="Images/slide 6/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide" id="slide7" style="display: none;">
+      <div class="character" id="figure-01">
+        <img src="Images/slide 7/figure-01.png" alt="figure" />
+      </div>
+      <div class="character" id="text-01-7">
+        <img src="Images/slide 7/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide" id="slide8" style="display: none;">
+      <div class="character" id="background-01-8">
+        <img src="Images/slide 8/background-01.png" alt="background" />
+      </div>
+      <div class="character" id="figure-01-8">
+        <img src="Images/slide 8/figure-01.png" alt="figure" />
+      </div>
+      <div class="character" id="text-01-8">
+        <img src="Images/slide 8/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide" id="slide9" style="display: none;">
+      <div class="character" id="text-01-9">
+        <img src="Images/slide 9/text-01.png" alt="text" />
+      </div>
+      
+      <div class="character" id="wall-01-9">
+        <img src="Images/slide 9/wall-01.png" alt="wall" />
+      </div>
+      <div class="character" id="bed-01-9">
+        <img src="Images/slide 9/bed-01.png" alt="bed" />
+      </div>
+      
+     
+    </div>
+
+    <!-- Slide 10 -->
+    <div class="slide" id="slide10" style="display: none;">
+      <div class="character" id="living-room-01">
+        <img src="Images/slide 10/living room-01.png" alt="living room" />
+      </div>
+      <div class="character" id="text-01-10">
+        <img src="Images/slide 10/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Slide 11 -->
+    <div class="slide" id="slide11" style="display: none;">
+      <div class="character" id="slide-15-01">
+        <img src="Images/slide 11/slide 15-01.png" alt="slide 15" />
+      </div>
+      <div class="character" id="text-01-11">
+        <img src="Images/slide 11/text-01.png" alt="text" />
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div id="navigation">
+      <button id="prev">◀</button>
+      <span id="counter">1/11</span>
+      <div id="dots"></div>
+      <button id="next">▶</button>
+    </div>
+  </div>
+
+  <!-- Music and Scripts -->
+  <button id="mute-btn">🔊 Mute</button>
+  <audio id="bg-music" src="hearty.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
+
+Music: https://www.bensound.com
+License code: EU7OQE8BFMEXII2B
+Artist: : Aventure
